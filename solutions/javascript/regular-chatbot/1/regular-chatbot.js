@@ -19,12 +19,6 @@ export function getURL(userInput) {
   return userInput.match(new RegExp(/\w+\.\w+/, 'gi'));
 }
 
-/**
- * Greet the user using the full name data from the profile.
- *
- * @param {string} fullName
- * @returns {string} Greeting from the chatbot
- */
 export function niceToMeetYou(fullName) {
   return "Nice to meet you, " + 
     fullName.split(", ")[1] + " " + 
